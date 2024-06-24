@@ -4,13 +4,20 @@
       xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
 <head>
     <meta charset="UTF-8">
-    <title>Layout</title>
+    <title>Buoi 6 API</title>
+
+
+    <!--Font AweSome JS-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+
+    <link th:fragment="link-css" rel="stylesheet" th:href="@{/css/style.css}">
 </head>
 <body>
-<nav class="navbar navbar-expand-lg navbar-light bg-primary">
+<nav class="navbar navbar-expand-lg navbar-light" style="background:rgb(221, 108, 241)">
     <div class="container-fluid">
-        <a class="navbar-brand text-white" href="/products">Web Bán Hàng</a>
+        <a class="navbar-brand text-white" href="/products">LAB SPRING API</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
@@ -45,12 +52,110 @@
     </div>
 </nav>
 
-<div class="container mt-5">
+<div class="section-body">
     <section layout:fragment="content">
         <!-- Nội dung cụ thể của từng trang sẽ được đặt tại đây -->
     </section>
 </div>
+<!-- Footer -->
+<footer>
+    <div class="footer_top ">
+        <div class="container">
+            <div class="footer_grid row">
+                <div class="col-4">
+                    <h3> Về chúng tôi </h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias asperiores qui ut excepturi, delectus aspernatur.
+                    </p>
+                </div>
+                <div class="col-4">
+                    <h3>Tin tức </h3>
+                    <div class="footer_link">
+                        <i class="fa fa-long-arrow-alt-right"></i>
+                        <a href="#!">Trang chủ.</a>
+                    </div>
+                    <div class="footer_link">
+                        <i class="fa fa-long-arrow-alt-right"></i>
+                        <a href="#!">Sản phẩm.</a>
+                    </div>
+                    <div class="footer_link">
+                        <i class="fa fa-long-arrow-alt-right"></i>
+                        <a href="#!">Danh mục.</a>
+                    </div>
+                    <div class="footer_link">
+                        <i class="fa fa-long-arrow-alt-right"></i>
+                        <a href="#!">About.</a>
+                    </div>
+                    <div class="footer_link">
+                        <i class="fa fa-long-arrow-alt-right"></i>
+                        <a href="#!">Dịch vụ.</a>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <h3>Thông tin liên hệ </h3>
+                    <div class="footer_contact">
+                        <i class="fa fa-map-marker-alt"></i>
+                        <a href="#!"> Khu CNC, Thủ đức Campus, TPHCM</a>
+                    </div>
 
+                    <div class="footer_contact">
+                        <i class="far fa-envelope"></i>
+                        <a href="mailto:info@cybersoft.edu.vn"> info@thuanphat.dev.vn</a>
+                    </div>
+
+                    <div class="footer_contact">
+                        <i class="fas fa-phone-alt"></i>
+                        <a href="tel:0961051014"> 096.105.1014</a>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="footer_form ">
+        <div class="container">
+            <form class="row g-3">
+                <div class="col-4 col-form-label">
+                    <label for="EmailForm" >Sign up for our Newsletter</label>
+                </div>
+                <div class="col-6">
+
+                    <input type="email" class="form-control" id="EmailForm" value="Email Address...">
+                </div>
+
+                <div class="col-2 text-center">
+                    <button type="submit" class="btn">SUBMIT</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+
+    <div class="footer_bot">
+        <div>© 2024 SpaceGo. All rights reserved | Design by <a href="#">THUAN PHAT</a></div>
+    </div>
+
+</footer>
+
+<!-- Back To TOp  -->
+
+<a href="#" class="backToTop cd-top text-replace js-cd-top">
+    <i class="fa fa-angle-up"></i>
+</a>
+
+<!--Jquery-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script>
+<!-- WayPoint -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js" ></script>
+
+<!--SLick Carousel-->
+<script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+<script src="../../resources/static/js/back-to-top-master/main.js"></script>
+<script src="../../resources/static/js/back-to-top-master/util.js"></script>
+
+<!--Boostrap 5-->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
